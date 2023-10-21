@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "MiaMioMeow",
+    "description": "Desktop pet",
+    "version": "1.0",
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [ {
+        "matches": ["<all_urls>","chrome://*/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+    } ],
+    "web_accessible_resources": [{ 
+        "resources": ["idle_animation.gif","idle_animation1.gif","cat_purr.mp3","hover_pur.mp3"],
+        "matches": ["<all_urls>","chrome://*/*"]
+    }],
+    "action": {
+        "default_icon": "icon.png"
+    }
+}

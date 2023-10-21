@@ -1,0 +1,9 @@
+.pet {
+    /* height: 30%; */
+    width: 10%;
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    /* background-size: 30px 30px; */
+    /* background-position: 0 0; */
+}
